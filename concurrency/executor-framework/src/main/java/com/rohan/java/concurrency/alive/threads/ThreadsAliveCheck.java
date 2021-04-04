@@ -1,4 +1,4 @@
-package com.rohan.refactored.alive.threads;
+package com.rohan.java.concurrency.alive.threads;
 
 
 import com.rohan.java.concurrency.common.Utils;
