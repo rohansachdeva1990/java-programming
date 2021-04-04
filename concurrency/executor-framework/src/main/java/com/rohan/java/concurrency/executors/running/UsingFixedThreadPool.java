@@ -1,0 +1,35 @@
+package com.rohan.java.concurrency.executors.running;
+
+
+import com.rohan.concurrency.common.tasks.LoopTaskA;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class UsingFixedThreadPool {
+
+    public static void main(String[] args) {
+        System.out.println("Main thread starts here..");
+
+        // At all times total number of concurrent running task never gets exceeded.
+        // Initializing phase
+        ExecutorService executorService = Executors.newFixedThreadPool(6);
+
+        executorService.submit(new LoopTaskA());
+        executorService.submit(new LoopTaskA());
+        executorService.submit(new LoopTaskA());
+        executorService.submit(new LoopTaskA());
+        executorService.submit(new LoopTaskA());
+
+        // The program wont stop until and unless we call shutdown method. Never forget ! Or there
+        // will be memory leak
+        executorService.shutdown();
+
+        // Now we will get a runtime exception for rejection
+        executorService.submit(new LoopTaskA());
+
+
+        System.out.println("Main thread ends here..");
+    }
+
+}

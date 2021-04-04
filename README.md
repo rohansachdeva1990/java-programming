@@ -1,2 +1,4 @@
-# java-programming
-Java language playground
+# Java Programming
+
+## Fundamentals
+

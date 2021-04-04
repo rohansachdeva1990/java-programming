@@ -1,6 +1,0 @@
-rootProject.name = 'java-programming'
-include 'concurrency-and-multithreading'
-include 'executor-framework'
-include 'rx-java'
-include 'java-enterprise-edition'
-
