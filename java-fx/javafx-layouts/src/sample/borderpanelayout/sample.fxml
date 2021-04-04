@@ -1,0 +1,46 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<!--
+    1. Border pane does not support alignment property.
+    2. By default top-left alignment.
+    3. We can have only one element with in bottom layer. So we need to use nesting of layer by introducing HBox.
+    4. Alignment within a "bottom" tag will remain same, if make the HBox alignment as top or bottom.
+    5. In Label, alignment is w.r.t to text.
+
+-->
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<BorderPane fx:controller="sample.borderpanelayout.Controller" xmlns:fx="http://javafx.com/fxml">
+
+    <top>
+        <Label text="This label is in the top position" alignment="CENTER"
+               BorderPane.alignment="CENTER"
+               style="-fx-border-color:blue; -fx-border-width: 3; -fx-border-style: dashed"/>
+    </top>
+
+    <center>
+        <Label text="This label is in the center position. and has really loooooooooooooooooooooooooooong text"/>
+    </center>
+
+    <left>
+        <Label text="This label is in the left position" alignment="CENTER"/>
+    </left>
+
+    <right>
+        <Label text="This label is in the left right"/>
+    </right>
+
+    <bottom>
+        <HBox spacing="10" alignment="BOTTOM_RIGHT">
+            <padding>
+                <Insets bottom="10" right="10"/>
+            </padding>
+
+            <Button text="Okay" prefWidth="90"/>
+            <Button text="Cancel" prefWidth="90"/>
+            <Button text="Help" prefWidth="90"/>
+        </HBox>
+    </bottom>
+</BorderPane>

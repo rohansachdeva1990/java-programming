@@ -1,0 +1,9 @@
+# maven gitignore
+target/
+
+# eclipse gitignore
+.metadata
+
+# eclipse core
+.settings/
+.classpath

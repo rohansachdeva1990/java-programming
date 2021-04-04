@@ -1,8 +1,8 @@
 package com.rohan.java.concurrency.common.tasks;
 
-import com.rohan.concurrency.executors.returnval.TaskResult;
 
-import java.sql.Time;
+import com.rohan.java.concurrency.returnval.executors.TaskResult;
+
 import java.util.concurrent.Callable;
 import java.util.concurrent.TimeUnit;
 

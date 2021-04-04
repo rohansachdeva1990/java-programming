@@ -1,0 +1,32 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<!-- Notes:-
+    1. Each column size depends on the widest element.
+    2. If we don't specify the rowIndex and rowIndex, all the elements will be stacked on the same cell.
+    3. We need to specify row and column default: row(0) and column (0)
+    4. Setting debugging properties like grid lines
+    5. "alignment=center", makes the grid to align itself to center.
+    6. columnConstraints: percentWidth: determines the complete width of the primary stage container. Now the root
+    grid will occupy the complete window.
+-->
+<?import javafx.scene.layout.ColumnConstraints?>
+<GridPane fx:controller="sample.gridlayout.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" gridLinesVisible="true">
+
+<!--    <columnConstraints>
+        &lt;!&ndash; Percentage width as per order in the grid. In our case we have 2 columns &ndash;&gt;
+        <ColumnConstraints percentWidth="50.0"/>
+        <ColumnConstraints percentWidth="50.0"/>
+    </columnConstraints>-->
+
+    <Button text="Button One" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <Button text="Button Two" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+    <Button text="Button Three" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <Button text="Really Long Button Four more text more text more text more text" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    <Button text="Button Five" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+
+</GridPane>

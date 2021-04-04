@@ -1,6 +1,7 @@
 package com.rohan.java.concurrency.common.factory;
 
-import com.rohan.concurrency.common.handlers.ThreadExceptionHandler;
+
+import com.rohan.java.concurrency.common.handlers.ThreadExceptionHandler;
 
 public class ThreadFactoryWithExceptionHandler extends NamedThreadFactory {
 

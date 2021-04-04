@@ -1,7 +1,8 @@
 package com.rohan.java.concurrency.common.tasks;
 
-import com.rohan.concurrency.common.Utils;
-import com.rohan.concurrency.common.handlers.ResultListener;
+
+import com.rohan.java.concurrency.common.Utils;
+import com.rohan.java.concurrency.common.handlers.ResultListener;
 
 public class ValueReturningTaskB implements Runnable {
 

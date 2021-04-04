@@ -1,0 +1,20 @@
+<!--
+    1. Supports auto align of elements on re sizing the stage window.
+    2. If you are not sure how many children will there be, then use it.
+    3. Elements are centered
+
+-->
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.TilePane?>
+<TilePane fx:controller="sample.tilepanelayout.Controller" xmlns:fx="http://javafx.com/fxml">
+    <Button text="Button One"/>
+    <Button text="Button Two"/>
+    <Button text="Button Three"/>
+    <Button text="Button Four"/>
+    <Button text="Button Five"/>
+    <Button text="Button Six"/>
+    <Button text="Button Seven"/>
+    <Button text="Button Eight"/>
+    <Button text="Button Nine"/>
+    <Button text="Button Ten"/>
+</TilePane>

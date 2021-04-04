@@ -16,6 +16,7 @@
         <module>functional-interfaces</module>
         <module>date-time</module>
         <module>streams</module>
+        <module>default-methods</module>
     </modules>
 
     <properties>

@@ -23,6 +23,8 @@
         <module>string-manipulation</module>
         <module>regular-expressions</module>
         <module>annotations</module>
+        <module>enumeration</module>
+        <module>object-oriented-concepts</module>
     </modules>
 
     <properties>

@@ -1,6 +1,5 @@
 package com.rohan.java.concurrency.common.tasks;
 
-import com.rohan.concurrency.common.Utils;
 
 public class LoopTaskE implements Runnable {
 

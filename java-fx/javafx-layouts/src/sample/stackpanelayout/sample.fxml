@@ -1,0 +1,15 @@
+<!--
+    1. Arranged in stack acc to order in which we add to the stack pane
+    2. Used in layering similar to photoshop
+-->
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<StackPane fx:controller="sample.tilepanelayout.Controller" xmlns:fx="http://javafx.com/fxml">
+
+    <Button text="Button One" style="-fx-background-color: red"/>
+    <Label text = "The Label Text" style="-fx-background-color: green" />
+    <Label text = "The Second label text" style="-fx-background-color: blue" />
+
+</StackPane>
