@@ -1,0 +1,1 @@
+https://github.com/HugoMatilla/Effective-JAVA-Summary#58-use-checked-exceptions-for-recoverable-conditions-and-runtime-exceptions-for-programming-errors
